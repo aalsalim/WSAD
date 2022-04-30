@@ -2,7 +2,10 @@ import os
 import sys
 import time
 import ctypes
-import json
+try:
+    import json
+except ImportError:
+    import simplejson as json
 import requests
 import pyautogui
 import pyodbc
