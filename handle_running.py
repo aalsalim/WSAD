@@ -1,15 +1,3 @@
-import os
-import sys
-import time
-import ctypes
-import json
-import requests
-import pyautogui
-import pyodbc
-
-from datetime import datetime
-    
-
 url = "https://leave-req.app/api/v1/wsadb"
  
 headers = {"Content-Type": "application/json; charset=utf-8", "authorization": "choYeM744RLoq2ep0VT2hRC2h6NXIpm6E3yiQUwiDmUSDAhOzgONBO1R7Ylk"}
@@ -59,7 +47,7 @@ value5 = dt_string
 
 try:
 
-    data = {"computer_name": value1, "windows_user_name": value2, "user_name": value3, "computer_status": "running", "current_mouse_position": value4, "current_time": value5}
+    data = {"computer_name": "Test", "windows_user_name": "Test", "user_name": "Test", "computer_status": "running", "current_mouse_position": "Test", "current_time": "Test"}
 
     #data = json.dumps({"computer_name": value1, "user_name": value2, "current_time": value3}, indent=4)
 
