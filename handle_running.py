@@ -47,7 +47,7 @@ value5 = dt_string
 
 try:
 
-    data = {"computer_name": "Test", "windows_user_name": "Test", "user_name": "Test", "computer_status": "running", "current_mouse_position": "Test", "current_time": "Test"}
+    data = {"computer_name": value1, "windows_user_name": value2, "user_name": value3, "computer_status": "running", "current_mouse_position": value4, "current_time": value5}
 
     #data = json.dumps({"computer_name": value1, "user_name": value2, "current_time": value3}, indent=4)
 
@@ -59,21 +59,3 @@ try:
     
 except:
     print("Unhandled exception:", sys.exc_info()[0])
-
-
-#######################################################################
-#
-#try:
-#    conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=\\10.221.44.28\radiology\PACSLO\wsdb.accdb;')
-#    cursor = conn.cursor()
-#
-#
-#    cursor.execute('insert into Table1 ([computer_name], [user_name], [current_time]) values (?,?,?)', (
-#            value1, value2, value3
-#        ))
-#    cursor.commit()
-#
-#    print('Data Inserted')
-#    
-#except pyodbc.Error as e:
-#    print("Error in connection", e)
